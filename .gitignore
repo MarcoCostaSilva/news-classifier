@@ -4,8 +4,11 @@ data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
-# Modelos treinados (artefatos grandes)
+# Modelos treinados: model_v1.joblib é versionado propositalmente (ver README),
+# pois os testes automatizados de CI dependem dele estar disponível. Outras
+# versões experimentais (ex. model_v2_full.joblib) continuam ignoradas.
 models/*.joblib
+!models/model_v1.joblib
 models/*.pkl
 
 # Python
@@ -24,6 +27,3 @@ venv/
 # IDE
 .vscode/
 .idea/
-
-# Metadado de instalação editável
-*.egg-info/
