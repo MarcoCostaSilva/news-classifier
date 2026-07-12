@@ -1,0 +1,29 @@
+# Dados (não versionar dataset bruto/processado)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Modelos treinados (artefatos grandes)
+models/*.joblib
+models/*.pkl
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Ambiente
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Metadado de instalação editável
+*.egg-info/
